@@ -1,0 +1,16 @@
+﻿@model Valores
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form asp-action="Index" method="post">
+    <p class="h2">Introducir un numero</p>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span asp-validation-for="valor" class="input-group-text" id="inputGroup-sizing-default"></span>
+            <input asp-for="valor" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+    </div>
+    <input class="btn btn-primary" type="submit" value="Invertir">
+</form>

@@ -1,8 +1,24 @@
-﻿@model Valores
+﻿@model List<int>
 
 @{
 }
 
-<h1 class="text-sucess">El Valor en forma binario es: </h1>
-<h1>@Model.valor</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Binarios</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.Count; i++)
+            {
+                <tr>
+                    <th scope="row">Numero @(i+1)</th>
+                    <td>@Model[i]</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
 <a class="btn btn-primary" asp-controller="Home" asp-action="Index">Home</a>

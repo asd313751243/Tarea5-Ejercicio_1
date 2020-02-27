@@ -5,11 +5,47 @@
 }
 
 <form asp-action="Index" method="post">
-    <p class="h2">Introducir un numero</p>
+    <p class="h2">Introducir 10 numeros</p>
     <div class="input-group mb-3">
         <div class="input-group-prepend">
-            <span asp-validation-for="valor" class="input-group-text" id="inputGroup-sizing-default"></span>
-            <input asp-for="valor" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <span asp-validation-for="valor0" class="input-group-text" id="inputGroup-sizing-default"></span>
+            <input asp-for="valor0" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+        </div>
+        <div class="input-group-prepend">
+            <span asp-validation-for="valor1" class="input-group-text" id="inputGroup-sizing-default"></span>
+            <input asp-for="valor1" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+        </div>
+        <div class="input-group-prepend">
+            <span asp-validation-for="valor2" class="input-group-text" id="inputGroup-sizing-default"></span>
+            <input asp-for="valor2" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+        </div>
+        <div class="input-group-prepend">
+            <span asp-validation-for="valor3" class="input-group-text" id="inputGroup-sizing-default"></span>
+            <input asp-for="valor3" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+        </div>
+        <div class="input-group-prepend">
+            <span asp-validation-for="valor4" class="input-group-text" id="inputGroup-sizing-default"></span>
+            <input asp-for="valor4" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+        </div>
+        <div class="input-group-prepend">
+            <span asp-validation-for="valor5" class="input-group-text" id="inputGroup-sizing-default"></span>
+            <input asp-for="valor5" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+        </div>
+        <div class="input-group-prepend">
+            <span asp-validation-for="valor6" class="input-group-text" id="inputGroup-sizing-default"></span>
+            <input asp-for="valor6" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+        </div>
+        <div class="input-group-prepend">
+            <span asp-validation-for="valor7" class="input-group-text" id="inputGroup-sizing-default"></span>
+            <input asp-for="valor7" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+        </div>
+        <div class="input-group-prepend">
+            <span asp-validation-for="valor8" class="input-group-text" id="inputGroup-sizing-default"></span>
+            <input asp-for="valor8" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+        </div>
+        <div class="input-group-prepend">
+            <span asp-validation-for="valor9" class="input-group-text" id="inputGroup-sizing-default"></span>
+            <input asp-for="valor9" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
         </div>
     </div>
     <input class="btn btn-primary" type="submit" value="Invertir">
